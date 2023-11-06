@@ -7,7 +7,9 @@
       (keyup)="filterList()"
       #inputSearch
     />
-    <button class="text-white bg-indigo-600 p-2 rounded-lg flex">
+    <button
+      class="text-white bg-indigo-600 hover:bg-indigo-800 p-2 rounded-lg flex"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -60,7 +62,7 @@
           <td class="px-6 py-4">{{ libro.autor }}</td>
           <td class="px-6 py-4">{{ libro.editor }}</td>
           <td class="px-6 py-4">{{ libro.estado }}</td>
-          <td *ngIf="user | async" class="px-6 py-4 space-x-2">
+          <td *ngIf="user | async" class="px-6 py-4 space-x-2 flex">
             <button
               [swal]="{
               title: 'BUY.TITLE' | translate,
@@ -69,9 +71,23 @@
               denyButtonText: 'BUY.DENY' | translate,
             }"
               (confirm)="comprarLibro(libro.id ?? '')"
-              class="bg-indigo-400 text-white p-1 rounded-lg hover:bg-indigo-700"
+              class="bg-indigo-400 text-white py-1 px-4 rounded-lg hover:bg-indigo-700 flex space-x-2 text-sm font-semibold justify-center items-center"
             >
-              {{ "ACTIONS.BUY" | translate }}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+              <p>{{ "ACTIONS.BUY" | translate }}</p>
             </button>
             <button
               [swal]="{
@@ -82,9 +98,24 @@
                 denyButtonText: 'RENT.DENY' | translate,
               }"
               (confirm)="alquilarLibro(libro.id ?? '', $event)"
-              class="bg-indigo-400 text-white p-1 rounded-lg hover:bg-indigo-700"
+              class="bg-teal-400 text-white py-1 px-4 rounded-lg hover:bg-teal-700 flex space-x-2 text-sm font-semibold justify-center items-center"
             >
-              {{ "ACTIONS.RENT" | translate }}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                />
+              </svg>
+
+              <p>{{ "ACTIONS.RENT" | translate }}</p>
             </button>
           </td>
         </tr>

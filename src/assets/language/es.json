@@ -38,7 +38,7 @@
             "NPAG": "Número de páginas es requerido",
             "STATUS": "Estado es requerido",
             "SALE_PRICE": "Precio de venta es requerido",
-            "RENT_PRICE": "Precio de compr es requeridoa"
+            "RENT_PRICE": "Precio de alquiler es requerido"
         }
     },
     "HEADER": {
@@ -91,7 +91,7 @@
         "STATUS": "Estado",
         "EXAMPLE_STATUS": "Desgastado",
         "SALE_PRICE": "Precio de venta",
-        "RENT_PRICE": "Precio de compra"
+        "RENT_PRICE": "Precio de Alquiler"
     },
     "REPORTS": {
         "VVL": "Valor Venta de Libros",
