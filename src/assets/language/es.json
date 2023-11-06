@@ -1,0 +1,102 @@
+{
+    "ACTIONS": {
+        "SEARCH": "Buscar",
+        "LOGIN": "Iniciar Sesión",
+        "REGISTER": "Regístrarse",
+        "CONFIRM": "Confirmar",
+        "BUY": "Comprar",
+        "SELL": "Vender",
+        "RENT": "Alquilar",
+        "LOADING": "Cargando...",
+        "PRICE": "Precio",
+        "DAY": "Dia",
+        "NEWBOOK": "Registrar Libro",
+        "VIEW": "Mostrar"
+    },
+    "RENT": {
+        "TITLE": "Ingresa el número de días que deseas alquilar",
+        "DENY": "No Alquilar",
+        "SUCCESS": "Se ha alquilado el libro correctamente",
+        "ERROR": "Ocurrio un error al realizar la transacción"
+    },
+    "BUY": {
+        "TITLE": "¿Está seguro que desea comprar este producto?",
+        "DENY": "No Comprar",
+        "SUCCESS": "El libro ha sido comprado correctamente",
+        "ERROR": "Ocurrio un error al realizar la transacción"
+    },
+    "VALIDATORS": {
+        "ISREQUIRED": {
+            "PASSWORD": "Contraseña es requerido",
+            "USER_NAME": "Nombre de Usuario es requerido",
+            "PHONE": "Teléfono es requerido",
+            "EMAIL": "Correo es requerido",
+            "ADDRESS": "Dirección es requerido",
+            "BNAME": "Nombre del Libro es requerido",
+            "AUTHOR": "Autor es requerido",
+            "PUBLISHER": "Editorial es requerido",
+            "NPAG": "Número de páginas es requerido",
+            "STATUS": "Estado es requerido",
+            "SALE_PRICE": "Precio de venta es requerido",
+            "RENT_PRICE": "Precio de compr es requeridoa"
+        }
+    },
+    "HEADER": {
+        "HOME": "Inicio",
+        "BOOKS": "Libros",
+        "SEARCH_BOOK": "Buscar Libro",
+        "INVENTORY": "Inventario",
+        "REPORTS": "Reportes"
+    },
+    "LOGIN": {
+        "TITLE": "Iniciar Sesión",
+        "USER_NAME": "Nombre de Usuario",
+        "PASSWORD": "Contraseña",
+        "USER_PASSWORD_INCORRECT": "Usuario o Contraseña incorrectos"
+    },
+    "REGISTER": {
+        "TITLE": "Registro",
+        "USER_NAME": "Nombre de Usuario",
+        "PASSWORD": "Contraseña",
+        "PHONE_NUMBER": "Número de Teléfono",
+        "EMAIL_ADDRESS": "Dirección de Correo",
+        "ADDRESS": "Dirección",
+        "SUCCESS": "Se ha registrado el usuario correctamente",
+        "FAILEND": "No se pudo registrar el usuario."
+    },
+    "HOME": {
+        "TABLE": {
+            "NAME": "Nombre",
+            "AUTHOR": "Autor",
+            "PUBLISHER": "Editorial",
+            "STATUS": "Estado",
+            "ACTIONS": "Acciones",
+            "USER": "Propietario"
+        }
+    },
+    "USER": {
+        "REGISTER_BOOK": "Registrar Libro",
+        "RENTED_BOOKS": "Libros Alquilados",
+        "BOOKS_FOR_SALE": "Libros en Venta",
+        "PURCHASED_BOOKS": "Libros Comprados"
+    },
+    "NEWBOOK": {
+        "TITLE": "Ingresa los datos de tu libro",
+        "SUCCESS": "Se ha registrado el libro correctamente",
+        "FAILEND": "Ha ocurrido un error al intentar registrar el libro",
+        "BNAME": "Nombre del Libro",
+        "AUTHOR": "Autor",
+        "PUBLISHER": "Editorial",
+        "NPAG": "Número de páginas",
+        "STATUS": "Estado",
+        "EXAMPLE_STATUS": "Desgastado",
+        "SALE_PRICE": "Precio de venta",
+        "RENT_PRICE": "Precio de compra"
+    },
+    "REPORTS": {
+        "VVL": "Valor Venta de Libros",
+        "CL": "Cantidad de Libros",
+        "VAL": "Valor Alquiler de Libros",
+        "CP": "Cantidad de Páginas"
+    }
+}

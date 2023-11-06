@@ -1,0 +1,81 @@
+<div class="mt-6 space-y-3 flex flex-col">
+  <div class="space-x-2 self-end flex">
+    <input
+      type="text"
+      [placeholder]="'HEADER.SEARCH_BOOK' | translate"
+      class="text-black outline-none focus:ring-2 focus:ring-indigo-900 text-lg pl-2"
+      (keyup)="filterList()"
+      #inputSearch
+    />
+    <button class="text-white bg-indigo-600 p-2 rounded-lg flex">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+        />
+      </svg>
+      {{ "ACTIONS.SEARCH" | translate }}
+    </button>
+  </div>
+  <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500">
+      <thead class="text-xs text-gray-700 uppercase bg-slate-200">
+        <tr>
+          <th scope="col" class="px-6 py-3">
+            {{ "HOME.TABLE.NAME" | translate }}
+          </th>
+          <th scope="col" class="px-6 py-3">
+            {{ "HOME.TABLE.AUTHOR" | translate }}
+          </th>
+          <th scope="col" class="px-6 py-3">
+            {{ "HOME.TABLE.PUBLISHER" | translate }}
+          </th>
+          <th scope="col" class="px-6 py-3">
+            {{ "HOME.TABLE.STATUS" | translate }}
+          </th>
+          <th *ngIf="user | async" scope="col" class="px-6 py-3">
+            {{ "HOME.TABLE.USER" | translate }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let libro of librosFiltered"
+          class="bg-white border-b -800 hover:bg-gray-50"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+          >
+            {{ libro.nombre }}
+          </th>
+          <td class="px-6 py-4">{{ libro.autor }}</td>
+          <td class="px-6 py-4">{{ libro.editor }}</td>
+          <td class="px-6 py-4">{{ libro.estado }}</td>
+          <td *ngIf="user | async" class="px-6 py-4 space-x-2">
+            <button
+              [swal]="{
+                  title: 'HOME.TABLE.USER'|translate,
+                  html:'<p>'+'<b>'+('REGISTER.USER_NAME'|translate)+': </b>'+libro.usuario.username+'</p>'+
+                  '<p>'+'<b>'+('REGISTER.PHONE_NUMBER'|translate)+': </b>'+libro.usuario.telefono+'</p>'+
+                  '<p>'+'<b>'+('REGISTER.EMAIL_ADDRESS'|translate)+': </b>'+libro.usuario.correo+'</p>'+
+                  '<p>'+'<b>'+('REGISTER.ADDRESS'|translate)+': </b>'+libro.usuario.direccion+'</p>',
+                }"
+              class="bg-indigo-400 text-white p-1 rounded-lg hover:bg-indigo-700"
+            >
+              {{ "ACTIONS.VIEW" | translate }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

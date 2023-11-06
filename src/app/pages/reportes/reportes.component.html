@@ -1,0 +1,21 @@
+<div class="flex justify-center items-center space-x-16 mt-6">
+  <div *ngIf="reporte" class="flex flex-col w-64 justify-center items-center">
+    <h4 class="text-xl font-semibold">{{ "REPORTS.VVL" | translate }}</h4>
+    <app-valor-libros [reporte]="reporte"></app-valor-libros>
+  </div>
+
+  <div *ngIf="reporte" class="flex flex-col w-64 justify-center items-center">
+    <h4 class="text-xl font-semibold">{{ "REPORTS.CL" | translate }}</h4>
+    <app-cantidad-libros [reporte]="reporte"></app-cantidad-libros>
+  </div>
+
+  <div *ngIf="reporte" class="flex flex-col w-64 justify-center items-center">
+    <h4 class="text-xl font-semibold">{{ "REPORTS.VAL" | translate }}</h4>
+    <app-valor-alquiler-libros [reporte]="reporte"></app-valor-alquiler-libros>
+  </div>
+
+  <div *ngIf="reporte" class="flex flex-col w-64 justify-center items-center">
+    <h4 class="text-xl font-semibold">{{ "REPORTS.CP" | translate }}</h4>
+    <app-cantidad-pags [reporte]="reporte"></app-cantidad-pags>
+  </div>
+</div>

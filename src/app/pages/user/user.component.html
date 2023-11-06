@@ -1,0 +1,131 @@
+<div class="mt-6 space-y-3">
+  <a
+    routerLink="/regBook"
+    class="bg-indigo-800 text-white p-2 hover:bg-indigo-950 rounded-lg"
+    >{{ "USER.REGISTER_BOOK" | translate }}</a
+  >
+  <div class="space-y-2" *ngIf="librosRentados.length > 0">
+    <p class="text-xl font-semibold">{{ "USER.RENTED_BOOKS" | translate }}</p>
+
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+      <table class="w-full text-sm text-left text-gray-500">
+        <thead class="text-xs text-gray-700 uppercase bg-slate-200">
+          <tr>
+            <th scope="col" class="px-6 py-3">
+              {{ "HOME.TABLE.NAME" | translate }}
+            </th>
+            <th scope="col" class="px-6 py-3">
+              {{ "HOME.TABLE.AUTHOR" | translate }}
+            </th>
+            <th scope="col" class="px-6 py-3">
+              {{ "HOME.TABLE.PUBLISHER" | translate }}
+            </th>
+            <th scope="col" class="px-6 py-3">
+              {{ "HOME.TABLE.STATUS" | translate }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="let libro of librosRentados"
+            class="bg-white border-b -800 hover:bg-gray-50"
+          >
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+            >
+              {{ libro.nombre }}
+            </th>
+            <td class="px-6 py-4">{{ libro.autor }}</td>
+            <td class="px-6 py-4">{{ libro.editor }}</td>
+            <td class="px-6 py-4">{{ libro.estado }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="space-y-2" *ngIf="librosVenta.length > 0">
+    <p class="text-xl font-semibold">{{ "USER.BOOKS_FOR_SALE" | translate }}</p>
+
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+      <table class="w-full text-sm text-left text-gray-500">
+        <thead class="text-xs text-gray-700 uppercase bg-slate-200">
+          <tr>
+            <th scope="col" class="px-6 py-3">
+              {{ "HOME.TABLE.NAME" | translate }}
+            </th>
+            <th scope="col" class="px-6 py-3">
+              {{ "HOME.TABLE.AUTHOR" | translate }}
+            </th>
+            <th scope="col" class="px-6 py-3">
+              {{ "HOME.TABLE.PUBLISHER" | translate }}
+            </th>
+            <th scope="col" class="px-6 py-3">
+              {{ "HOME.TABLE.STATUS" | translate }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="let libro of librosVenta"
+            class="bg-white border-b -800 hover:bg-gray-50"
+          >
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+            >
+              {{ libro.nombre }}
+            </th>
+            <td class="px-6 py-4">{{ libro.autor }}</td>
+            <td class="px-6 py-4">{{ libro.editor }}</td>
+            <td class="px-6 py-4">{{ libro.estado }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="space-y-2" *ngIf="librosVendidos.length > 0">
+    <p class="text-xl font-semibold">
+      {{ "USER.PURCHASED_BOOKS" | translate }}
+    </p>
+
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+      <table class="w-full text-sm text-left text-gray-500">
+        <thead class="text-xs text-gray-700 uppercase bg-slate-200">
+          <tr>
+            <th scope="col" class="px-6 py-3">
+              {{ "HOME.TABLE.NAME" | translate }}
+            </th>
+            <th scope="col" class="px-6 py-3">
+              {{ "HOME.TABLE.AUTHOR" | translate }}
+            </th>
+            <th scope="col" class="px-6 py-3">
+              {{ "HOME.TABLE.PUBLISHER" | translate }}
+            </th>
+            <th scope="col" class="px-6 py-3">
+              {{ "HOME.TABLE.STATUS" | translate }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="let libro of librosVendidos"
+            class="bg-white border-b -800 hover:bg-gray-50"
+          >
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+            >
+              {{ libro.nombre }}
+            </th>
+            <td class="px-6 py-4">{{ libro.autor }}</td>
+            <td class="px-6 py-4">{{ libro.editor }}</td>
+            <td class="px-6 py-4">{{ libro.estado }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

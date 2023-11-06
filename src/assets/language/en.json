@@ -1,0 +1,102 @@
+{
+    "ACTIONS": {
+        "SEARCH": "Search",
+        "LOGIN": "Login",
+        "REGISTER": "Register",
+        "CONFIRM": "Confirm",
+        "BUY": "Buy",
+        "SELL": "Sell",
+        "RENT": "Rent",
+        "LOADING": "Loading...",
+        "PRICE": "Price",
+        "DAY": "Day",
+        "NEWBOOK": "Register Book",
+        "VIEW": "View"
+    },
+    "RENT": {
+        "TITLE": "Enter the number of days you want to rent",
+        "DENY": "Don't Rent",
+        "SUCCESS": "The book has been rented successfully",
+        "ERROR": "An error occurred while completing the transaction"
+    },
+    "BUY": {
+        "TITLE": "Are you sure you want to buy this product?",
+        "DENY": "Not buying",
+        "SUCCESS": "The book has been purchased correctly",
+        "ERROR": "An error occurred while completing the transaction"
+    },
+    "VALIDATORS": {
+        "ISREQUIRED": {
+            "PASSWORD": "Password is required",
+            "USER_NAME": "UserName is required",
+            "PHONE": "Phone is required",
+            "EMAIL": "Email is required",
+            "ADDRESS": "Address is required",
+            "BNAME": "Name of the book is required",
+            "AUTHOR": "Author is required",
+            "PUBLISHER": "Publisher is required",
+            "NPAG": "Number of pages is required",
+            "STATUS": "Status is required",
+            "SALE_PRICE": "Sale Price is required",
+            "RENT_PRICE": "Rent Price is required"
+        }
+    },
+    "HEADER": {
+        "HOME": "Home",
+        "BOOKS": "Books",
+        "SEARCH_BOOK": "Search Book",
+        "INVENTORY": "Inventory",
+        "REPORTS": "Reports"
+    },
+    "LOGIN": {
+        "TITLE": "Login",
+        "USER_NAME": "User Name",
+        "PASSWORD": "Password",
+        "USER_PASSWORD_INCORRECT": "user or password incorrect"
+    },
+    "REGISTER": {
+        "TITLE": "Register",
+        "USER_NAME": "User Name",
+        "PASSWORD": "Password",
+        "PHONE_NUMBER": "Phone Number",
+        "EMAIL_ADDRESS": "Email Address",
+        "ADDRESS": "Address",
+        "SUCCESS": "The user has registered correctly",
+        "FAILEND": "The user could not be registered."
+    },
+    "HOME": {
+        "TABLE": {
+            "NAME": "Name",
+            "AUTHOR": "Author",
+            "PUBLISHER": "Publisher",
+            "STATUS": "Status",
+            "ACTIONS": "Actions",
+            "USER": "Owner"
+        }
+    },
+    "USER": {
+        "REGISTER_BOOK": "Register Book",
+        "RENTED_BOOKS": "Rented Books",
+        "BOOKS_FOR_SALE": "Books for Sale",
+        "PURCHASED_BOOKS": "Purchased Books"
+    },
+    "NEWBOOK": {
+        "TITLE": "Enter your book details",
+        "SUCCESS": "The book has been registered correctly",
+        "FAILEND": "An error occurred while trying to register the book",
+        "BNAME": "Name of the book",
+        "AUTHOR": "Author",
+        "PUBLISHER": "Publisher",
+        "NPAG": "Number of pages",
+        "STATUS": "Status",
+        "EXAMPLE_STATUS": "Worn Out",
+        "SALE_PRICE": "Sale Price",
+        "RENT_PRICE": "Rent Price"
+    },
+    "REPORTS": {
+        "VVL": "Book Sales Value",
+        "CL": "Number of Books",
+        "VAL": "Book Rental Value",
+        "CP": "Number of Pages"
+    }
+}
