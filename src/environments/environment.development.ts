@@ -1,3 +1,3 @@
 export const environment = {
-  api: 'https://localhost:7044/api',
+  api: 'https://enjoybookapi.azurewebsites.net/api',
 };
